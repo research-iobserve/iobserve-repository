@@ -14,6 +14,7 @@ protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
 org.eclipse.ocl
+org.eclipse.net4j
 EOF`
 
 MVNDIR="${BINDIR}/mvn-repo"
