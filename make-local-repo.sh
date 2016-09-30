@@ -16,6 +16,7 @@ org.eclipse.emf.cdo.common
 org.eclipse.ocl
 org.eclipse.net4j
 org.eclipse.net4j.util
+org.eclipse.equinox.common
 EOF`
 
 MVNDIR="${BINDIR}/mvn-repo"
