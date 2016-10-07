@@ -14,9 +14,12 @@ protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
 org.eclipse.ocl
+org.eclipse.ocl.common
+org.eclipse.ocl.ecore
 org.eclipse.net4j
 org.eclipse.net4j.util
 org.eclipse.equinox.common
+lpg.runtime.java
 EOF`
 
 MVNDIR="${BINDIR}/mvn-repo"
@@ -29,6 +32,7 @@ export GRADLE_DEPENDENCIES="${BINDIR}/gradle.dependencies"
 
 NEWLINE=$'\n'
 
+rm -f "${GRADLE_DEPENDENCIES}"
 touch "${GRADLE_DEPENDENCIES}"
 
 for I in $LIST ; do
