@@ -10,6 +10,9 @@ org.palladiosimulator.pcm
 de.uka.ipd.sdq.units
 de.uka.ipd.sdq.stoex
 de.uka.ipd.sdq.probfunction
+de.uka.ipd.sdq.dsexplore
+de.uka.ipd.pcm.designdecision
+org.opt4j
 protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
@@ -46,7 +49,7 @@ for I in $LIST ; do
 			echo $N
 		#	echo $ARTIFACT
 		#	echo $VERSION
-			mvn org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file -Dfile="$P" \
+			mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile="$P" \
 				-DgroupId=extra -DartifactId=$ARTIFACT -Dpackaging=jar -Dversion=$VERSION \
 				-DlocalRepositoryPath=mvn-repo
 			echo "compile 'extra:${ARTIFACT}:${VERSION}'" >> "${GRADLE_DEPENDENCIES}"
