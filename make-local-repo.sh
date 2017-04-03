@@ -7,6 +7,7 @@ LIBS=~/.p2/pool/plugins
 LIST=`cat << EOF
 de.uka.ipd.sdq.identifier
 org.palladiosimulator.pcm
+org.palladiosimulator.pcm.privacy
 de.uka.ipd.sdq.units
 de.uka.ipd.sdq.stoex
 de.uka.ipd.sdq.probfunction
