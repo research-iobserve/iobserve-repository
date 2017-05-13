@@ -9,6 +9,7 @@ de.uka.ipd.sdq.identifier
 org.palladiosimulator.pcm
 org.palladiosimulator.pcm.privacy
 org.palladiosimulator.pcm.resources
+org.palladiosimulator.pcm.cloud
 org.palladiosimulator.solver
 org.palladiosimulator.solver.context
 org.palladiosimulator.analyzer.workflow
