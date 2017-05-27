@@ -12,6 +12,10 @@ org.palladiosimulator.pcm.privacy
 de.uka.ipd.sdq.units
 de.uka.ipd.sdq.stoex
 de.uka.ipd.sdq.probfunction
+de.uka.ipd.sdq.featuremodel
+de.uka.ipd.sdq.dsexplore.qml
+de.uka.ipd.sdq.pcm.cost
+de.uka.ipd.sdq.pcm.designdecision
 protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
