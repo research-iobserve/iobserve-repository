@@ -17,8 +17,15 @@ org.palladiosimulator.analyzer.completions
 org.palladiosimulator.analyzer.resultdecorator
 org.palladiosimulator.analyzer.quality
 de.uka.ipd.sdq.units
+de.uka.ipd.sdq.statistics
+de.uka.ipd.sdq.pcm.stochasticexpressions
+de.uka.ipd.sdq.featuremodel
+de.uka.ipd.sdq.errorhandling
+de.uka.ipd.sdq.tcfmoop
 de.uka.ipd.sdq.stoex
+de.uka.ipd.sdq.stoex.analyser
 de.uka.ipd.sdq.probfunction
+de.uka.ipd.sdq.probfunction.math
 de.uka.ipd.sdq.featuremodel
 de.uka.ipd.sdq.dsexplore.qml
 de.uka.ipd.sdq.pcm.cost
@@ -27,7 +34,10 @@ de.uka.ipd.sdq.statistics
 de.uka.ipd.sdq.pcm.stochasticexpressions
 de.uka.ipd.sdq.workflow.mdsd
 de.uka.ipd.sdq.workflow.launchconfig
+de.uka.ipd.sdq.workflow.logging.console
+de.uka.ipd.sdq.workflow.ui
 de.uka.ipd.sdq.workflow
+org.opt4j
 protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
@@ -37,6 +47,13 @@ org.eclipse.ocl.ecore
 org.eclipse.net4j
 org.eclipse.net4j.util
 org.eclipse.equinox.common
+org.eclipse.xpand
+org.eclipse.xtend.core
+org.eclipse.xtend.typesystem.emf
+org.eclipse.xtend.standalone
+org.eclipse.xtend
+org.eclipse.lib
+org.eclipse.lib.macro
 lpg.runtime.java
 EOF`
 
