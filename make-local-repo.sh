@@ -9,6 +9,13 @@ de.uka.ipd.sdq.identifier
 org.palladiosimulator.pcm
 org.palladiosimulator.pcm.cloud
 org.palladiosimulator.pcm.privacy
+org.palladiosimulator.pcm.resources
+org.palladiosimulator.solver
+org.palladiosimulator.solver.context
+org.palladiosimulator.analyzer.workflow
+org.palladiosimulator.analyzer.completions
+org.palladiosimulator.analyzer.resultdecorator
+org.palladiosimulator.analyzer.quality
 de.uka.ipd.sdq.units
 de.uka.ipd.sdq.stoex
 de.uka.ipd.sdq.probfunction
@@ -16,6 +23,11 @@ de.uka.ipd.sdq.featuremodel
 de.uka.ipd.sdq.dsexplore.qml
 de.uka.ipd.sdq.pcm.cost
 de.uka.ipd.sdq.pcm.designdecision
+de.uka.ipd.sdq.statistics
+de.uka.ipd.sdq.pcm.stochasticexpressions
+de.uka.ipd.sdq.workflow.mdsd
+de.uka.ipd.sdq.workflow.launchconfig
+de.uka.ipd.sdq.workflow
 protocom.extension
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
