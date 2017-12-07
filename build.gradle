@@ -51,7 +51,7 @@ artifacts {
 	archives file: file('lib/de.uka.ipd.sdq.stoex-2.2.0.201511050934.jar'), name: 'de.uka.ipd.sdq.stoex-2.2.0.201511050934', type: 'jar'
 	archives file: file('lib/org.eclipse.net4j-4.5.0.v20160607-1254.jar'), name: 'org.eclipse.net4j-4.5.0.v20160607-1254', type: 'jar'
 	archives file: file('lib/de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439', type: 'jar'
-	archives file: file('libde.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519', type: 'jar'
 	archives file: file('lib/de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854', type: 'jar'
 	archives file: file('lib/org.palladiosimulator.solver-3.0.0.201705161424.jar'), name: 'org.palladiosimulator.solver-3.0.0.201705161424', type: 'jar'
 	archives file: file('lib/de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705191439.jar'), name: 'de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705191439', type: 'jar'
