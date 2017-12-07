@@ -9,7 +9,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'com.github.research-iobserve'
-version = '-SNAPSHOT'
+version = 'build-SNAPSHOT'
 
 dependencies {
 	compile fileTree(dir: 'lib', include: ['*.jar*'])
