@@ -1,3 +1,176 @@
-apply plugin: 'maven'
-apply plugin: 'java'
+allprojects{
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+}
 
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.github.research-iobserve'
+
+dependencies {
+	compile fileTree(dir: 'lib', include: ['*.jar*'])
+}
+
+artifacts {
+	archives file: file('lib/de.uka.ipd.sdq.pcm.stochasticexpressions-2.0.0.201705160916.jar'), name: 'de.uka.ipd.sdq.pcm.stochasticexpressions-2.0.0.201705160916', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.errorhandling-1.0.0.201611171324.jar'), name: 'de.uka.ipd.sdq.errorhandling-1.0.0.201611171324', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.identifier-2.1.0.201511050934.jar'), name: 'de.uka.ipd.sdq.identifier-2.1.0.201511050934', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.identifier-2.1.0.201611171324.jar'), name: 'de.uka.ipd.sdq.identifier-2.1.0.201611171324', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.statistics-1.0.0.201611171324.jar'), name: 'de.uka.ipd.sdq.statistics-1.0.0.201611171324', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.completions-1.0.0.201607261504.jar'), name: 'org.palladiosimulator.analyzer.completions-1.0.0.201607261504', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.completions-1.0.0.201705161359.jar'), name: 'org.palladiosimulator.analyzer.completions-1.0.0.201705161359', type: 'jar'
+	archives file: file('lib/org.eclipse.ocl.common-1.4.0.v20160521-2033.jar'), name: 'org.eclipse.ocl.common-1.4.0.v20160521-2033', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.pcm.cloud-1.0.0.201705251715.jar'), name: 'org.palladiosimulator.pcm.cloud-1.0.0.201705251715', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.workflow-2.1.1.201607261500.jar'), name: 'de.uka.ipd.sdq.workflow-2.1.1.201607261500', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.workflow.launchconfig-2.1.0.201607261500.jar'), name: 'de.uka.ipd.sdq.workflow.launchconfig-2.1.0.201607261500', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.units-2.1.0.201511050934.jar'), name: 'de.uka.ipd.sdq.units-2.1.0.201511050934', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.workflow-1.0.0.201607261504.jar'), name: 'org.palladiosimulator.analyzer.workflow-1.0.0.201607261504', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.workflow-1.0.0.201705161359.jar'), name: 'org.palladiosimulator.analyzer.workflow-1.0.0.201705161359', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.stoex.analyser-2.0.0.201705160916.jar'), name: 'de.uka.ipd.sdq.stoex.analyser-2.0.0.201705160916', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.pcm.resources-4.0.0.201705160916.jar'), name: 'org.palladiosimulator.pcm.resources-4.0.0.201705160916', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.pcm.resources-4.0.0.201703011205.jar'), name: 'org.palladiosimulator.pcm.resources-4.0.0.201703011205', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.pcm.privacy-4.0.2.2017-05-31.jar'), name: 'org.palladiosimulator.pcm.privacy-4.0.2.2017-05-31', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.pcm.cost-1.0.0.201705031519.jar'), name: 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705031519', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.pcm.cost-1.0.0.201705191439.jar'), name: 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705191439', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.pcm.cost-1.0.0.201705291854.jar'), name: 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705291854', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.workflow.mdsd-2.1.1.201607261500.jar'), name: 'de.uka.ipd.sdq.workflow.mdsd-2.1.1.201607261500', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.featuremodel-2.1.0.201511051634.jar'), name: 'de.uka.ipd.sdq.featuremodel-2.1.0.201511051634', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.resultdecorator-1.0.0.201607261504.jar'), name: 'org.palladiosimulator.analyzer.resultdecorator-1.0.0.201607261504', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.resultdecorator-1.0.0.201705161400.jar'), name: 'org.palladiosimulator.analyzer.resultdecorator-1.0.0.201705161400', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.solver.context-2.0.0.201705161424.jar'), name: 'org.palladiosimulator.solver.context-2.0.0.201705161424', type: 'jar'
+	archives file: file('lib/lpg.runtime.java-2.0.17.v201004271640.jar'), name: 'lpg.runtime.java-2.0.17.v201004271640', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.probfunction.math-2.0.2.201611171324.jar'), name: 'de.uka.ipd.sdq.probfunction.math-2.0.2.201611171324', type: 'jar'
+	archives file: file('lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar'), name: 'org.eclipse.equinox.common-3.8.0.v20160509-1230', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.probfunction-2.1.0.201511050934.jar'), name: 'de.uka.ipd.sdq.probfunction-2.1.0.201511050934', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.probfunction-2.1.1.201611171324.jar'), name: 'de.uka.ipd.sdq.probfunction-2.1.1.201611171324', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.stoex-2.2.0.201511050934.jar'), name: 'de.uka.ipd.sdq.stoex-2.2.0.201511050934', type: 'jar'
+	archives file: file('lib/org.eclipse.net4j-4.5.0.v20160607-1254.jar'), name: 'org.eclipse.net4j-4.5.0.v20160607-1254', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439', type: 'jar'
+	archives file: file('libde.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854.jar'), name: 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.solver-3.0.0.201705161424.jar'), name: 'org.palladiosimulator.solver-3.0.0.201705161424', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705191439.jar'), name: 'de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705191439', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705291854.jar'), name: 'de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705291854', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.quality-1.0.0.201607261504.jar'), name: 'org.palladiosimulator.analyzer.quality-1.0.0.201607261504', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.analyzer.quality-1.0.0.201705161359.jar'), name: 'org.palladiosimulator.analyzer.quality-1.0.0.201705161359', type: 'jar'
+	archives file: file('lib/de.uka.ipd.sdq.tcfmoop-1.0.0.201705291854.jar'), name: 'de.uka.ipd.sdq.tcfmoop-1.0.0.201705291854', type: 'jar'
+	archives file: file('lib/org.eclipse.ocl.ecore-3.6.0.v20160523-1914.jar'), name: 'org.eclipse.ocl.ecore-3.6.0.v20160523-1914', type: 'jar'
+	archives file: file('lib/org.eclipse.emf.cdo.common-4.5.0.v20160301-1326.jar'), name: 'rg.eclipse.emf.cdo.common-4.5.0.v20160301-1326', type: 'jar'
+	archives file: file('lib/org.eclipse.emf.cdo-4.5.0.v20160607-1254.jar'), name: 'org.eclipse.emf.cdo-4.5.0.v20160607-1254', type: 'jar'
+	archives file: file('lib/org.eclipse.net4j.util-3.6.0.v20160607-1254.jar'), name: 'org.eclipse.net4j.util-3.6.0.v20160607-1254', type: 'jar'
+	archives file: file('lib/org.eclipse.ocl-3.6.0.v20160523-1914.jar'), name: 'org.eclipse.ocl-3.6.0.v20160523-1914', type: 'jar'
+	archives file: file('lib/org.palladiosimulator.pcm-4.0.2.201705160916.jar'), name: 'org.palladiosimulator.pcm-4.0.2.201705160916', type: 'jar'
+	archives jar 
+}
+
+jar {
+	baseName = project.name
+}
+
+install{
+	repositories{
+		mavenInstaller{
+		addFilter('de.uka.ipd.sdq.pcm.stochasticexpressions-2.0.0.201705160916') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.stochasticexpressions-2.0.0.201705160916'
+		}
+		addFilter('de.uka.ipd.sdq.errorhandling-1.0.0.201611171324') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.errorhandling-1.0.0.201611171324'
+		}
+		addFilter('de.uka.ipd.sdq.identifier-2.1.0.201511050934') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.identifier-2.1.0.201511050934'
+		}
+		addFilter('de.uka.ipd.sdq.identifier-2.1.0.201611171324') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.identifier-2.1.0.201611171324'
+		}
+		addFilter('de.uka.ipd.sdq.statistics-1.0.0.201611171324') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.statistics-1.0.0.201611171324'
+		}
+		addFilter('org.palladiosimulator.analyzer.completions-1.0.0.201607261504') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.completions-1.0.0.201607261504'
+		}
+		addFilter('org.palladiosimulator.analyzer.completions-1.0.0.201705161359') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.completions-1.0.0.201705161359'
+		}
+		addFilter('org.eclipse.ocl.common-1.4.0.v20160521-2033') { artifact, file -> artifact.name == 'org.eclipse.ocl.common-1.4.0.v20160521-2033'
+		}
+		addFilter('org.palladiosimulator.pcm.cloud-1.0.0.201705251715') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm.cloud-1.0.0.201705251715'
+		}
+		addFilter('de.uka.ipd.sdq.workflow-2.1.1.201607261500') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.workflow-2.1.1.201607261500'
+		}
+		addFilter('de.uka.ipd.sdq.workflow.launchconfig-2.1.0.201607261500') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.workflow.launchconfig-2.1.0.201607261500'
+		}
+		addFilter('de.uka.ipd.sdq.units-2.1.0.201511050934') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.units-2.1.0.201511050934'
+		}
+		addFilter('org.palladiosimulator.analyzer.workflow-1.0.0.201607261504') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.workflow-1.0.0.201607261504'
+		}
+		addFilter('org.palladiosimulator.analyzer.workflow-1.0.0.201705161359') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.workflow-1.0.0.201705161359'
+		}
+		addFilter('de.uka.ipd.sdq.stoex.analyser-2.0.0.201705160916') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.stoex.analyser-2.0.0.201705160916'
+		}
+		addFilter('org.palladiosimulator.pcm.resources-4.0.0.201705160916') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm.resources-4.0.0.201705160916'
+		}
+		addFilter('org.palladiosimulator.pcm.resources-4.0.0.201703011205') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm.resources-4.0.0.201703011205'
+		}
+		addFilter('org.palladiosimulator.pcm.privacy-4.0.2.2017-05-31') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm.privacy-4.0.2.2017-05-31'
+		}
+		addFilter('de.uka.ipd.sdq.pcm.cost-1.0.0.201705031519') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705031519'
+		}
+		addFilter('de.uka.ipd.sdq.pcm.cost-1.0.0.201705191439') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705191439'
+		}
+		addFilter('de.uka.ipd.sdq.pcm.cost-1.0.0.201705291854') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.cost-1.0.0.201705291854'
+		}
+		addFilter('de.uka.ipd.sdq.workflow.mdsd-2.1.1.201607261500') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.workflow.mdsd-2.1.1.201607261500'
+		}
+		addFilter('de.uka.ipd.sdq.featuremodel-2.1.0.201511051634') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.featuremodel-2.1.0.201511051634'
+		}
+		addFilter('org.palladiosimulator.analyzer.resultdecorator-1.0.0.201607261504') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.resultdecorator-1.0.0.201607261504'
+		}
+		addFilter('org.palladiosimulator.analyzer.resultdecorator-1.0.0.201705161400') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.resultdecorator-1.0.0.201705161400'
+		}
+		addFilter('org.palladiosimulator.solver.context-2.0.0.201705161424') { artifact, file -> artifact.name == 'org.palladiosimulator.solver.context-2.0.0.201705161424'
+		}
+		addFilter('lpg.runtime.java-2.0.17.v201004271640') { artifact, file -> artifact.name == 'lpg.runtime.java-2.0.17.v201004271640'
+		}
+		addFilter('de.uka.ipd.sdq.probfunction.math-2.0.2.201611171324') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.probfunction.math-2.0.2.201611171324'
+		}
+		addFilter('org.eclipse.equinox.common-3.8.0.v20160509-1230') { artifact, file -> artifact.name == 'org.eclipse.equinox.common-3.8.0.v20160509-1230'
+		}
+		addFilter('de.uka.ipd.sdq.probfunction-2.1.0.201511050934') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.probfunction-2.1.0.201511050934'
+		}
+		addFilter('de.uka.ipd.sdq.probfunction-2.1.1.201611171324') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.probfunction-2.1.1.201611171324'
+		}
+		addFilter('de.uka.ipd.sdq.stoex-2.2.0.201511050934') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.stoex-2.2.0.201511050934'
+		}
+		addFilter('org.eclipse.net4j-4.5.0.v20160607-1254') { artifact, file -> artifact.name == 'org.eclipse.net4j-4.5.0.v20160607-1254'
+		}
+		addFilter('de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705191439'
+		}
+		addFilter('de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705031519'
+		}
+		addFilter('de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.dsexplore.qml-1.0.0.201705291854'
+		}
+		addFilter('org.palladiosimulator.solver-3.0.0.201705161424') { artifact, file -> artifact.name == 'org.palladiosimulator.solver-3.0.0.201705161424'
+		}
+		addFilter('de.uka.ipd.sdq.pcm.designdecision-1.3.0.2017051914') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.designdecision-1.3.0.2017051914'
+		}
+		addFilter('de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705291854') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.pcm.designdecision-1.3.0.201705291854'
+		}
+		addFilter('org.palladiosimulator.analyzer.quality-1.0.0.201607261504') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.quality-1.0.0.201607261504'
+		}
+		addFilter('org.palladiosimulator.analyzer.quality-1.0.0.201705161359') { artifact, file -> artifact.name == 'org.palladiosimulator.analyzer.quality-1.0.0.201705161359'
+		}
+		addFilter('de.uka.ipd.sdq.tcfmoop-1.0.0.201705291854') { artifact, file -> artifact.name == 'de.uka.ipd.sdq.tcfmoop-1.0.0.201705291854'
+		}
+		addFilter('org.eclipse.ocl.ecore-3.6.0.v20160523-1914') { artifact, file -> artifact.name == 'org.eclipse.ocl.ecore-3.6.0.v20160523-1914'
+		}
+		addFilter('org.eclipse.emf.cdo.common-4.5.0.v20160301-1326') { artifact, file -> artifact.name == 'org.eclipse.emf.cdo.common-4.5.0.v20160301-1326'
+		}
+		addFilter('org.eclipse.emf.cdo-4.5.0.v20160607-1254') { artifact, file -> artifact.name == 'org.eclipse.emf.cdo-4.5.0.v20160607-1254'
+		}
+		addFilter('org.eclipse.net4j.util-3.6.0.v20160607-1254') { artifact, file -> artifact.name == 'org.eclipse.net4j.util-3.6.0.v20160607-1254'
+		}
+		addFilter('org.eclipse.ocl-3.6.0.v20160523-1914') { artifact, file -> artifact.name == 'org.eclipse.ocl-3.6.0.v20160523-1914'
+		}
+		addFilter('org.palladiosimulator.pcm-4.0.2.201705160916') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm-4.0.2.201705160916'
+		}
+
+
+		}
+	}
+}
