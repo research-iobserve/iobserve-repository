@@ -8,7 +8,8 @@ allprojects{
 apply plugin: 'java'
 apply plugin: 'maven'
 
-group = 'com.github.research-iobserve'
+//group = 'com.github.research-iobserve'
+group = 'research-iobserve'
 version = 'build-SNAPSHOT'
 
 dependencies {
