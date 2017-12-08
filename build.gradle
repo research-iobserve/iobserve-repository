@@ -176,7 +176,8 @@ install{
 		addFilter('org.palladiosimulator.pcm-4.0.2.201705160916') { artifact, file -> artifact.name == 'org.palladiosimulator.pcm-4.0.2.201705160916'
 		}
 
-
+		addFilter('iobserve-repository') { artifact, file -> artifact.name == 'iobserve-repository'
+		}
 		}
 	}
 }
