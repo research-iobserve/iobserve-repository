@@ -7,6 +7,7 @@ allprojects{
 
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'war'
 
 //group = 'com.github.research-iobserve'
 group = 'research-iobserve'
@@ -65,7 +66,10 @@ artifacts {
 	archives file: file('lib/org.eclipse.net4j.util-3.6.0.v20160607-1254.jar'), name: 'org.eclipse.net4j.util-3.6.0.v20160607-1254', type: 'jar'
 	archives file: file('lib/org.eclipse.ocl-3.6.0.v20160523-1914.jar'), name: 'org.eclipse.ocl-3.6.0.v20160523-1914', type: 'jar'
 	archives file: file('lib/org.palladiosimulator.pcm-4.0.2.201705160916.jar'), name: 'org.palladiosimulator.pcm-4.0.2.201705160916', type: 'jar'
-	archives jar 
+	archives jar
+	archives war { 
+	classifier = 'deployment'
+	}
 }
 
 jar {
