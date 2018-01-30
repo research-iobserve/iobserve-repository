@@ -2,7 +2,7 @@
 
 BINDIR=$(cd "$(dirname "$0")"; pwd)
 
-LIBS=/Applications/EclipseOxygenModeling_iObserve/EclipseModelingTools.app/Contents/Eclipse/plugins
+LIBS=~/.p2/pool/plugins
 
 LIST=`cat << EOF
 de.uka.ipd.sdq.identifier
