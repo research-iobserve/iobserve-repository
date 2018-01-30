@@ -2,7 +2,7 @@
 
 BINDIR=$(cd "$(dirname "$0")"; pwd)
 
-LIBS=~/.p2/pool/plugins
+LIBS=/Applications/EclipseOxygenModeling_iObserve/EclipseModelingTools.app/Contents/Eclipse/plugins
 
 LIST=`cat << EOF
 de.uka.ipd.sdq.identifier
@@ -16,6 +16,20 @@ org.palladiosimulator.analyzer.workflow
 org.palladiosimulator.analyzer.completions
 org.palladiosimulator.analyzer.resultdecorator
 org.palladiosimulator.analyzer.quality
+org.palladiosimulator.edp2
+org.palladiosimulator.edp2.dao
+org.palladiosimulator.recorderframework
+org.palladiosimulator.recorderframework.edp2
+org.palladiosimulator.reliability
+de.uka.ipd.sdq.dsexplore
+de.uka.ipd.sdq.dsexplore.analysis.cost
+de.uka.ipd.sdq.dsexplore.analysis.lqn
+de.uka.ipd.sdq.dsexplore.analysis.reliability
+de.uka.ipd.sdq.dsexplore.analysis.simucom
+de.uka.ipd.sdq.dsexplore.bayesnets
+de.uka.ipd.sdq.dsexplore.qml
+de.uka.ipd.sdq.simucomframework
+de.uka.ipd.sdq.simulation
 de.uka.ipd.sdq.units
 de.uka.ipd.sdq.statistics
 de.uka.ipd.sdq.pcm.stochasticexpressions
@@ -27,7 +41,6 @@ de.uka.ipd.sdq.stoex.analyser
 de.uka.ipd.sdq.probfunction
 de.uka.ipd.sdq.probfunction.math
 de.uka.ipd.sdq.featuremodel
-de.uka.ipd.sdq.dsexplore.qml
 de.uka.ipd.sdq.pcm.cost
 de.uka.ipd.sdq.pcm.designdecision
 de.uka.ipd.sdq.statistics
