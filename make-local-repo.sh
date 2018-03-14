@@ -39,6 +39,7 @@ de.uka.ipd.sdq.workflow.ui
 de.uka.ipd.sdq.workflow
 org.opt4j
 protocom.extension
+org.eclipse.emf.ecore
 org.eclipse.emf.cdo
 org.eclipse.emf.cdo.common
 org.eclipse.ocl
