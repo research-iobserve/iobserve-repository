@@ -2,6 +2,7 @@
 
 BINDIR=$(cd "$(dirname "$0")"; pwd)
 
+#LIBS=~/.p2/pool/plugins
 LIBS=/Applications/EclipseOxygen1aModeling_iObserve/EclipseModelingTools.app/Contents/Eclipse/plugins
 
 LIST=`cat << EOF
