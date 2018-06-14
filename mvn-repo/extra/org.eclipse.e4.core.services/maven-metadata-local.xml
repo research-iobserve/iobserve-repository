@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.e4.core.services</artifactId>
+  <versioning>
+    <release>2.1.0.v20170407-0928</release>
+    <versions>
+      <version>2.1.0.v20170407-0928</version>
+    </versions>
+    <lastUpdated>20180614104840</lastUpdated>
+  </versioning>
+</metadata>

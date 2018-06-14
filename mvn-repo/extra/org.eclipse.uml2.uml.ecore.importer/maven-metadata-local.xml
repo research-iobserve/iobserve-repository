@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.uml2.uml.ecore.importer</artifactId>
+  <versioning>
+    <release>3.1.0.v20170605-1616</release>
+    <versions>
+      <version>3.1.0.v20170605-1616</version>
+    </versions>
+    <lastUpdated>20180614105706</lastUpdated>
+  </versioning>
+</metadata>

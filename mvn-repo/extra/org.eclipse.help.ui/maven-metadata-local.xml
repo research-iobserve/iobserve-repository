@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.help.ui</artifactId>
+  <versioning>
+    <release>4.1.0.v20170311-0931</release>
+    <versions>
+      <version>4.1.0.v20170311-0931</version>
+    </versions>
+    <lastUpdated>20180614105257</lastUpdated>
+  </versioning>
+</metadata>
