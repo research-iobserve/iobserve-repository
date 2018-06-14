@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.uml2.codegen.ecore</artifactId>
+  <versioning>
+    <release>2.3.0.v20170605-1616</release>
+    <versions>
+      <version>2.3.0.v20170605-1616</version>
+    </versions>
+    <lastUpdated>20180614105654</lastUpdated>
+  </versioning>
+</metadata>

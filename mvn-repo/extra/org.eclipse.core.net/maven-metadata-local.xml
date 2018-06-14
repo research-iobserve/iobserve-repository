@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.core.net</artifactId>
+  <versioning>
+    <release>1.3.100.v20170516-0820</release>
+    <versions>
+      <version>1.3.100.v20170516-0820</version>
+    </versions>
+    <lastUpdated>20180614104809</lastUpdated>
+  </versioning>
+</metadata>

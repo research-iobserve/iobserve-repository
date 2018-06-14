@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>extra</groupId>
+  <artifactId>org.eclipse.ui.workbench.texteditor</artifactId>
+  <versioning>
+    <release>3.10.100.v20170426-2021</release>
+    <versions>
+      <version>3.10.100.v20170426-2021</version>
+    </versions>
+    <lastUpdated>20180614105651</lastUpdated>
+  </versioning>
+</metadata>
